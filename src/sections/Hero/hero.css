@@ -1,0 +1,48 @@
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* OVERLAY OSCURO PARA QUE EL TEXTO SE LEA */
+.hero__overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.3)
+);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+/* TEXTO */
+.hero__content {
+  color: white;
+  max-width: 600px;
+}
+
+.hero__content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero__content p {
+  margin-bottom: 1.5rem;
+}
+
+/* BOTÓN */
+.hero__button {
+  background: #7A8C7B;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+}
