@@ -3,12 +3,13 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import "./services.css"
 
-import { facialServices, corporalServices, depilatoryServices  } from "../../data/services"
+import { facialServices, corporalServices, depilatoryServices, postOperatorysServices  } from "../../data/services"
 
 const data = {
   facial: facialServices,
   corporal: corporalServices,
-  depilatorio: depilatoryServices
+  depilatorio: depilatoryServices,
+  postOperatorio: postOperatorysServices
 }
 
 function Services() {
@@ -54,6 +55,15 @@ function Services() {
         >
           Depilatorios
         </button>
+
+        <button
+          className={active === "postOperatorio" ? "active" : ""}
+          onClick={() => setActive("postOperatorio")}
+        >
+          Post Operatorio
+        </button>
+
+
 
       </div>
 

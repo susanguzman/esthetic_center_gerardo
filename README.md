@@ -1,75 +1,43 @@
-# React + TypeScript + Vite
+# Esthetic Center Gerardo Villalobos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page moderna para un centro estético, desarrollada con React + TypeScript + Vite.
 
-Currently, two official plugins are available:
+El proyecto está enfocado en ofrecer una experiencia visual elegante, mostrando servicios, promociones, resultados y la información del centro de manera clara y atractiva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Características
 
-## React Compiler
+- Diseño responsive para dispositivos móviles y escritorio.
+- Animaciones y transiciones usando Framer Motion.
+- Galería visual del espacio de trabajo.
+- Sección de servicios organizada por categorías.
+- Promociones dinámicas.
+- Comparador de resultados "Antes y Después".
+- Integración con Google Maps.
+- Botón directo de contacto mediante WhatsApp.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tecnologías utilizadas
 
-Note: This will impact Vite dev & build performances.
+- React
+- TypeScript
+- Vite
+- Framer Motion
+- CSS3
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Instalación
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Clonar el repositorio:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+git clone https://github.com/susanguzman/esthetic_center_gerardo.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Entrar al proyecto:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+cd spa-web
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Instalar dependencias:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm install
+
+Ejecutar proyecto:
+
+npm run dev

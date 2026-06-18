@@ -2,6 +2,6 @@ export type Service = {
   id: number
   title: string
   description: string
-  price: string | number
+  price: string 
   duration: string
 }
