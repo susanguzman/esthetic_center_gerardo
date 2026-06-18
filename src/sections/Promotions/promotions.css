@@ -1,49 +1,37 @@
 .promotions {
   padding: 7rem 8%;
-
-  background:
-    linear-gradient(
-      to bottom,
-      #fff,
-      #faf7f4
-    );
+  background: linear-gradient(
+    to bottom,
+    #fff,
+    #faf7f4
+  );
 }
 
 /* INTRO */
 
 .promotions__intro {
   text-align: center;
-
   max-width: 850px;
-
   margin: 0 auto 4rem;
 }
 
 .promotions__intro p {
   font-size: 0.8rem;
-
   letter-spacing: 4px;
-
   color: #c7a17a;
-
   margin-bottom: 1rem;
 }
 
 .promotions__intro h2 {
   font-size: 2.8rem;
-
   line-height: 1.2;
-
   font-weight: 300;
-
   color: #6e4f3a;
-
   margin-bottom: 1.3rem;
 }
 
 .promotions__intro span {
   color: #9a8d82;
-
   font-size: 0.95rem;
 }
 
@@ -57,22 +45,17 @@
 
 .carousel-btn {
   position: absolute;
-
   top: 50%;
-
   transform: translateY(-50%);
-
   z-index: 20;
 
   width: 52px;
   height: 52px;
 
   border-radius: 50%;
-
   border: none;
 
-  background:
-    rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.85);
 
   backdrop-filter: blur(10px);
 
@@ -113,6 +96,8 @@
 
   scroll-behavior: smooth;
 
+  scroll-snap-type: x mandatory;
+
   padding: 1rem 0.5rem;
 }
 
@@ -123,10 +108,11 @@
 /* CARD */
 
 .promo-card {
+  width: 340px;
   min-width: 340px;
+  max-width: 340px;
 
-  background:
-    rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.75);
 
   backdrop-filter: blur(12px);
 
@@ -140,18 +126,22 @@
   transition: 0.35s ease;
 
   flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  scroll-snap-align: center;
 }
 
+
 .promo-card:hover {
-  transform:
-    translateY(-6px);
+  transform: translateY(-6px);
 }
 
 /* IMAGE */
 
 .promo-image {
   height: 280px;
-
   overflow: hidden;
 }
 
@@ -172,6 +162,13 @@
 
 .promo-content {
   padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  
+  min-width: 0;
 }
 
 .promo-badge {
@@ -188,6 +185,8 @@
   font-size: 0.78rem;
 
   margin-bottom: 1.2rem;
+
+  width: fit-content;
 }
 
 .promo-content h3 {
@@ -196,6 +195,8 @@
   color: #6e4f3a;
 
   margin-bottom: 1rem;
+
+  overflow-wrap: break-word;
 }
 
 .promo-content p {
@@ -204,6 +205,14 @@
   line-height: 1.7;
 
   margin-bottom: 2rem;
+
+  overflow-wrap: break-word;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
 }
 
 /* PRICES */
@@ -212,11 +221,12 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  margin-top: auto;
 }
 
 .old {
   color: #b8aba0;
-
   text-decoration: line-through;
 }
 
@@ -226,6 +236,19 @@
   color: #c58f63;
 
   font-weight: 600;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+  .promotions {
+    padding: 6rem 2rem;
+  }
+
+  .promo-card {
+    min-width: 320px;
+  }
 }
 
 /* MOBILE */
@@ -240,8 +263,35 @@
     font-size: 2rem;
   }
 
+  .promotions__intro span {
+    display: block;
+    line-height: 1.6;
+  }
+
+  .carousel {
+    gap: 1rem;
+    padding-inline: 0.2rem;
+  }
+
   .promo-card {
-    min-width: 85%;
+    width: 78vw;
+    min-width: 78vw;
+  }
+
+  .promo-image {
+    height: 220px;
+  }
+
+  .promo-content {
+    padding: 1.5rem;
+  }
+
+  .promo-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .promo-content p {
+    font-size: 0.95rem;
   }
 
   .carousel-btn {

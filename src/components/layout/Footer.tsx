@@ -16,7 +16,7 @@ function Footer() {
 
         <div className="footer__social">
           <a href="https://www.instagram.com/sthetic_center_gv?igsh=NDdscG42Y2tiaDB5&utm_source=qr" target="_blank">Instagram</a>
-          <a href="https://www.facebook.com/share/18ePuz9mxf/?mibextid=wwXIfr" target="_blank">Facebook</a>
+          <a href="https://www.facebook.com/share/1CbazJ4foT/?mibextid=wwXIfr" target="_blank">Facebook</a>
         </div>
 
       </div>
