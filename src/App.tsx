@@ -1,6 +1,6 @@
 import Navbar from "./components/layout/Navbar"
 import Hero from "./sections/Hero/Hero"
-import Promotions from "./sections/Promotions/promotions"
+import Promotions from "./sections/Promotions/Promotions"
 import Services from "./sections/Services/Services"
 import Gallery from "./sections/Gallery/Gallery"
 import Results from "./sections/Results/Results"
